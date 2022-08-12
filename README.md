@@ -16,7 +16,7 @@ pytest --language=es test_items.py # запускаем тест с интерф
 ```python
 # импортируем модуль time
 import time
-... 
+... # другие модули
 
 
 link = 'https://' # ссылка на тестируюмую страницу
