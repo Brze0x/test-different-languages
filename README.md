@@ -18,8 +18,11 @@ pytest --language=es test_items.py # запускаем тест с интерф
 import time
 ... 
 
+
+link = 'https://' # ссылка на тестируюмую страницу
+
 def test_check_something(browser):
-    browser.get('https://url.com')
+    browser.get(link)
     time.sleep(15) #  задержка в 15 секунд
     # другие действия
     ...
