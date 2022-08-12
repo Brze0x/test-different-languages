@@ -13,7 +13,7 @@ pytest --language=es test_items.py # запускаем тест с интерф
 
 
 Предупреждения (DeprecationWarning) связаны с тем что что экземпляр FirefoxProfile() который мы используем в фикстуре browser для добавления пользовательского профиля в рамках данного теста, устарел.
-И начиная с Selenium 4 вы должны использовать экземпляр Options.
+И начиная с Selenium 4 вы должны использовать экземпляр класса Options.
 ```py
 options = webdriver.FirefoxOptions()
 options.set_preference("intl.accept_languages", user_language)
