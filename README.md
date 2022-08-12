@@ -34,10 +34,15 @@ def test_check_something(browser):
 ```
 
 Предупреждения (DeprecationWarning) связаны с тем что что экземпляр FirefoxProfile() который мы используем в фикстуре browser для добавления пользовательского профиля в рамках данного теста, устарел.
-И начиная с Selenium 4 вы должны использовать экземпляр класса Options.
+И начиная с Selenium 4 вы должны использовать экземпляр класса FirefoxOptions()
 ```py
 options = webdriver.FirefoxOptions()
 options.set_preference("intl.accept_languages", user_language)
+```
+
+Для установки зависимостей в своё виртуальное окружение используйте следующие команды:
+```bash
+pip install -r requirements.txt
 ```
 
 Это и другие задания вы можете выполнить самостоятельно присоеденившись к курсу [Автоматизация тестирования с помощью Selenium и Python](https://stepik.org/course/575/promo) на платформе [Stepik](https://stepik.org/)
