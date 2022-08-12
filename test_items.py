@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
-def test_check_add_button(browser):
+def test_find_cart_button(browser):
     browser.get(link)
-    assert browser.find_elements(By.CSS_SELECTOR, ".btn-add-to-basket"), "Add to basket button not found"
+    basket_btn = browser.find_elements(By.CSS_SELECTOR, ".btn-add-to-basket")
+    assert basket_btn, "Add to basket button not found"
